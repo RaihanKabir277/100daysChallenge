@@ -19,10 +19,10 @@
 
 # great_with("Raihan", "Dhaka")
 
-# def great_with(name, location):
-#     print(f"hellow {name}")
-#     print(f"your location {location}")
+def great_with(name, location):
+    print(f"hellow {name}")
+    print(f"your location {location}")
 
-# great_with(location="Dhaka", name="Kabir")
+great_with(location="Dhaka", name="Kabir")
 
 

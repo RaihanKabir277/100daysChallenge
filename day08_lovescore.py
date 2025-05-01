@@ -38,9 +38,12 @@ def calculate_love_score(name1, name2):
     
     Love_Score = str(Total) + str(Total1)
     
-    print(f"Love Score={Love_Score}")
+    print(f"\n\nLove Score = {Love_Score}\n\n")
     
+name1 = input("Enter the name of the Boy below: \n")
+name2 = input("Enter the name of the Girls below: \n")
+
+calculate_love_score(name1, name2)
 
 
-calculate_love_score("Kanye West", "Kim Kardashian")
 

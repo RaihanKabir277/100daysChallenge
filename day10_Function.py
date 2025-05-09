@@ -33,14 +33,27 @@
 
 # -----------Multiple return values ---------------
 
-def format_name(f_name, l_name):
-    if f_name == "" or l_name == "":
-        return 
+# def format_name(f_name, l_name):
+#     if f_name == "" or l_name == "":
+#         return 
 
-    formated_f_name = f_name.title()
-    formated_l_name = l_name.title()
-    return f"Result : {formated_f_name} {formated_l_name}"
+#     formated_f_name = f_name.title()
+#     formated_l_name = l_name.title()
+#     return f"Result : {formated_f_name} {formated_l_name}"
     
 
-print(format_name(input("What is your first name?\n "), input("What is your last name? \n")))
+# print(format_name(input("What is your first name?\n "), input("What is your last name? \n")))
 
+def add(n1, n2):
+  return n1 + n2
+ 
+def subtract(n1, n2):
+  return n1 - n2
+ 
+def multiply(n1, n2):
+  return n1 * n2
+ 
+def divide(n1, n2):
+  return n1 / n2
+ 
+print(add(2, multiply(5, divide(8, 4))))

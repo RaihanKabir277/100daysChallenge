@@ -7,6 +7,7 @@ timmy = Turtle()
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen",
             "wheat", "SlateGray", "SeaGreen"]
 
+directions = [0, 90, 180, 270]
 
 # for i in range(100):
 #     steps = int(random() * 100)
@@ -17,9 +18,9 @@ colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSea
 # timmy.forward(100)
 
 def right():
-    return timmy.right(90)
+    return timmy.right(random.choice(directions))
 def left():
-    return timmy.left(90)
+    return timmy.left(random.choice(directions))
 
 actions = [right, left]
 
@@ -31,11 +32,11 @@ timmy.pensize(10)
 #     timmy.forward(30)
 #     timmy.right(90)
     
-for n in range(30):
+for n in range(40):
     timmy.color(random.choice(colours))
-    timmy.forward(30)
+    timmy.forward(10)
     random.choice(actions)()
-    timmy.forward(30)
+    timmy.forward(10)
 
 
 
